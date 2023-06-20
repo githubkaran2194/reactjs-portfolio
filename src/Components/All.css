@@ -133,10 +133,10 @@ b, strong {
   left: 0;
   animation: BottomTotop 6s linear infinite 0s;
 }
-.animated-item:nth-child(2) {
+.animated-item:nth-child(1) {
   animation-delay: 2s;
 }
-.animated-item:nth-child(3) {
+.animated-item:nth-child(2) {
   animation-delay: 4s;
 }
 
