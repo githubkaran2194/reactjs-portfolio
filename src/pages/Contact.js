@@ -58,7 +58,7 @@ const Contact = () => {
                 alert("Submitted")
             }
     
-            axios.post("https://6437a3340c58d3b145754311.mockapi.io/API/CRUD",{
+            axios.post("https://6437a3340c58d3b145754311.mockapi.io/API/projectsAPI",{
                 name : name,
                 email : email,
                 message : message
