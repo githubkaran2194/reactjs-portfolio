@@ -17,7 +17,7 @@ const About = () => {
               <div className="animated-info">
                 <span className="animated-item">karan chavan</span>
                 <span className="animated-item">Web Designer</span>
-                <span className="animated-item">UI Specialist</span>
+    
               </div>
             </h1>
 
