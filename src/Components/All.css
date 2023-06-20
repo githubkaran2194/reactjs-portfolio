@@ -131,7 +131,7 @@ b, strong {
   top: 0;
   right: 0;
   left: 0;
-  animation: BottomTotop 6s linear infinite 0s;
+  animation: BottomTotop 4s linear infinite 0s;
 }
 .animated-item:nth-child(1) {
   animation-delay: 2s;
@@ -172,7 +172,7 @@ b, strong {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 999999;
+  z-index: 99999;
   box-shadow: 2px 2px 5px rgb(0, 0, 0);
   background-color: #ffffff;
 }
@@ -465,7 +465,11 @@ h2 {
   display: block;
   margin: 10px 0 0 0;
 }
+.social-links{
+  padding: 5px 20px;
 }
+}
+
 @media (max-width: 320px) {
 .animated-text {
   margin-top: 0;
@@ -477,6 +481,9 @@ h2 {
 
 .full-screen {
   padding: 4rem 0;
+}
+.social-links{
+  padding: 5px 8px;
 }
 
 .mobile-block {

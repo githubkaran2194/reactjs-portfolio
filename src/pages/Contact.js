@@ -50,8 +50,15 @@ const Contact = () => {
             else {
                 setErrorEmail(false)
             }
+
+            if((name.length < 3) && (!email.match(emailRegex))){
+                alert("Invalid ")
+            }
+            else{
+                alert("Submitted")
+            }
     
-            axios.post("https://6437a3340c58d3b145754311.mockapi.io/crud-api/ValidationForm",{
+            axios.post("https://6437a3340c58d3b145754311.mockapi.io/API/CRUD",{
                 name : name,
                 email : email,
                 message : message
@@ -59,6 +66,8 @@ const Contact = () => {
             .then((res)=>{
                 console.log(res)
             })
+
+            
 
     }
     return (
@@ -125,7 +134,7 @@ const Contact = () => {
 
 
                                         <div className="ml-lg-auto col-lg-5 col-12">
-                                            <input type="submit" className="form-control submit-btn" value="Send Button" />
+                                            <input type="submit" className="form-control submit-btn" value="Send"  />
                                         </div>
                                     </div>
                                 </form>

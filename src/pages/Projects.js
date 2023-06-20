@@ -6,7 +6,7 @@ const Projects = () => {
 const [details, setDetails]=useState([]);
 
 function getData(){
-   axios.get("https://6437a3340c58d3b145754311.mockapi.io/crud-api/ValidationForm")
+   axios.get("https://6437a3340c58d3b145754311.mockapi.io/API/projectsAPI")
    .then((res)=>{
     setDetails(res.data)
    })    
