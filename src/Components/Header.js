@@ -48,6 +48,10 @@ const Header = () => {
             <a href="#" className="social-links" target="_blank" data-toggle="tooltip" data-placement="left" title='facebook'>
               <i className="fa-brands fa-facebook"></i>
             </a>
+
+            <a href="https://github.com/githubkaran2194" className="social-links" target="_blank" data-toggle="tooltip" data-placement="left" title='Github'>
+              <i className="fa-brands fa-github"></i>
+            </a>
         
         </ul>
 

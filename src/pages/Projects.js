@@ -8,12 +8,11 @@ const Projects = () => {
 const [details, setDetails]=useState([]);
 
 function getData(){
-    fetch('https://dummyjson.com/products/1')
-.then(res => res.json())
-.then(json => console.log(json))
-            
+   axios.get("https://6437a3340c58d3b145754311.mockapi.io/crud-api/ValidationForm")
+   .then((res)=>{
+    setDetails(res.data)
+   })    
 }
- 
  useEffect(()=>{
     getData()
  },[])
@@ -21,99 +20,61 @@ function getData(){
 
     return (
         <>
-<div className="detail_container">
-    <div className="detail_content">
-        {
-            details.map((x)=>{
-                return(
-                    <>
-                    <div className="card col-xl-6" >
-                                    <img className="card-img-top"
-                                        src={x.products.img}
-                                        alt="Card image cap" />
-                                    <div className="card-body">
-                                        <h5 className="card-title">{x.products.title}</h5>
-                                        <p className="card-text">{x.products.price}</p>
-                                        <a href="#" target={'_blank'} className="btn btn-primary"></a>
-                                    </div>
-                                </div>
-                    </>
-   
-                )
-            })
-        }
-    </div>
-</div>
 
             <section className="project py-5" id="project">
                 <div className="container">
 
                     <div className="row">
-                        <div className="col-lg-11 text-center mx-auto col-12">
+                        <div className="col-lg-11  text-center mx-auto col-12">
 
                             <div className="col-lg-8 mx-auto">
                                 <h2>Projects I have Done </h2>
                             </div>
-                            <div className="col-xl-12 d-flex justify-content-between card-area gap-5">
+                         
 
-                                <div className="card col-xl-6" >
+                            {
+            details.map((x)=>{
+                return(
+                    <>
+                    <div className="card_project col-md-12 d-flex justify-content-between gap-5">
+                    <div className="card">
                                     <img className="card-img-top"
-                                        src="https://img.freepik.com/free-vector/cartoon-web-design-landing-page_52683-70880.jpg?w=2000"
-                                        alt="Card image cap" />
+                                        src={x.img1}
+                                        alt="Card image cap" 
+                                        />
                                     <div className="card-body">
-                                        <h5 className="card-title">Card title</h5>
-                                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                            card's content.</p>
-                                        <Link to="/singleproject">
-                                            <button className='btn btn-primary'>see My Project Details</button>
-                                        </Link>
+                                        <h5 className="card-title">{x.title1}</h5>
+                                        <p className="card-text">{x.text1}</p>
+                                        <a href="#" target={'_blank'} className="btn btn-primary">
+                                            <button className='btn btn-primary'>See Project</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="card">
+                                    <img className="card-img-top"
+                                        src={x.img2}
+                                        alt="Card image cap" 
+                                        />
+                                    <div className="card-body">
+                                        <h5 className="card-title">{x.title2}</h5>
+                                        <p className="card-text">{x.text2}</p>
+                                        <a href="#" target={'_blank'} className="btn btn-primary">
+                                            <button className='btn btn-primary'>See Project</button>
+                                        </a>
                                     </div>
                                 </div>
 
+                             </div>
+                            
+                             
 
-                                <div className="card col-xl-6" >
-                                    <img className="card-img-top"
-                                        src="https://img.freepik.com/free-vector/cartoon-web-design-landing-page_52683-70880.jpg?w=2000"
-                                        alt="Card image cap" />
-                                    <div className="card-body">
-                                        <h5 className="card-title">Card title</h5>
-                                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                            card's content.</p>
-                                        <a href="#" className="btn btn-primary">See My Project</a>
-                                    </div>
-                                </div>
-</div>
-
-
-                            <div className="col-md-12 d-flex justify-content-between card-area gap-5 ">
-                                <div className="card col-xl-6" >
-                                    <img className="card-img-top"
-                                        src="https://img.freepik.com/free-vector/cartoon-web-design-landing-page_52683-70880.jpg?w=2000"
-                                        alt="Card image cap" />
-                                    <div className="card-body">
-                                        <h5 className="card-title">Card title</h5>
-                                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                            card's content.</p>
-                                        <a href="#" className="btn btn-primary">See My Project</a>
-                                    </div>
-                                </div>
-
-
-                                <div className="card col-xl-6" >
-                                    <img className="card-img-top"
-                                        src="https://img.freepik.com/free-vector/cartoon-web-design-landing-page_52683-70880.jpg?w=2000"
-                                        alt="Card image cap" />
-                                    <div className="card-body">
-                                        <h5 className="card-title">Card title</h5>
-                                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                            card's content.</p>
-                                        <a href="#" className="btn btn-primary">See My Project</a>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
+                              
+                    </>
+   
+                )
+            })
+        }
+                    </div>  
                     </div>
                 </div>
             </section>
