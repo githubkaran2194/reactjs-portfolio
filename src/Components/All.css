@@ -392,12 +392,23 @@ color: #f7f3f3;
 @media (max-width: 1298px) {
   .card{
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
   
 }
 @media (min-width: 1298px) {
   .card{
+    width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card{
     width: 100%;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -407,6 +418,13 @@ color: #f7f3f3;
 }
 .about-image {
   margin-top: 4em;
+}
+.card-body h5,p {
+  font-size: medium;
+}
+#card2{
+ display: flex;
+ flex-direction: column;
 }
 
 .mobile-mt-2,
@@ -452,6 +470,9 @@ h2 {
 .navbar-expand-sm .navbar-nav .nav-link {
   padding: 3px 20px;
 }
+.card-body h5,p {
+  font-size: medium;
+}
 }
 @media (max-width: 580px) {
 .animated-info {
@@ -477,8 +498,10 @@ h2 {
   padding: 5px 20px;
 }
 .card{
-  width: 150%;
-  margin-left: -60px;
+  width: 100%;
+}
+.card-body h5,p {
+  font-size: medium;
 }
 }
 
@@ -509,5 +532,11 @@ h2 {
 .social-links li {
   display: inline-block;
   vertical-align: top;
+}
+.card-body h5,p {
+  font-size: medium;
+}
+.card_project{
+  gap: -50px;
 }
 }
