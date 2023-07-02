@@ -110,7 +110,7 @@ b, strong {
   left: 0;
   z-index: 99999;
   box-shadow: 2px 2px 5px rgb(0, 0, 0);
-  background-color: #ffffff;
+  background: linear-gradient( #ebf4f7 , #d5e5e9);
 }
 .navbar-brand {
   font-weight: bold;

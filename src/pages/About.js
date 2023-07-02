@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Typewriter from "typewriter-effect";
 import web from '../New folder/Web-designer-1024x821.webp'
+import cv from '../New folder/Karan_Chavan_CV.pdf'
 const About = () => {
   return (
     <div>
@@ -15,7 +16,7 @@ const About = () => {
             <h1>Hello
             <br />
              I'm <pan style={{color:"red"}}>Karan Chavan</pan>
-             </h1>
+             </h1>+
              <h3>
              <Typewriter
  options={{
@@ -35,7 +36,7 @@ const About = () => {
         
 
             <div className="custom-btn-group mt-4">
-              <Link href="#" className="btn mr-lg-2 custom-btn">Download Resume</Link>
+              <a href={cv} className="btn mr-lg-2 custom-btn">Download Resume</a>
               <Link to="/contact" className="btn custom-btn custom-btn-bg custom-btn-link" data-hover="Contact">Get a free
                 quote</Link>
             </div>
