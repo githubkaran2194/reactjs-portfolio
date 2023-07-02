@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
-
+import Typewriter from "typewriter-effect";
+import web from '../New folder/Web-designer-1024x821.webp'
 const About = () => {
   return (
     <div>
@@ -12,17 +12,27 @@ const About = () => {
         <div className="col-lg-7 col-md-12 col-12 d-flex align-items-center">
           <div className="about-text">
             <small className="small-text">Welcome to <span className="mobile-block">my portfolio </span></small>
-            <h1 className="animated animated-text">
-              <span className="mr-2">Hey folks, I'm </span>
-              <div className="animated-info">
-                <span className="animated-item">karan chavan</span>
-                <span className="animated-item">Web Designer</span>
-    
-              </div>
-            </h1>
+            <h1>Hello
+            <br />
+             I'm <pan style={{color:"red"}}>Karan Chavan</pan>
+             </h1>
+             <h3>
+             <Typewriter
+ options={{
+                strings: ["React JS Developer",
+                           "Front End Developer"
+                 ],
+                autoStart: true,
+                loop : true
+ }}
+ />
+             </h3>
+           
+         
+            
 
-            <p>Building a successful product is a challenge. I am highly energetic in user experience design, interfaces
-              and web development.</p>
+
+        
 
             <div className="custom-btn-group mt-4">
               <Link href="#" className="btn mr-lg-2 custom-btn">Download Resume</Link>
@@ -34,7 +44,7 @@ const About = () => {
 
         <div className="col-lg-5 col-md-12 col-12">
           <div className="about-image svg">
-            <img src="https://img.freepik.com/free-photo/portrait-happy-excited-man-holding-laptop-computer_171337-12121.jpg" className="img-fluid" alt="svg image" />
+            <img src={web} className="img-fluid" alt="svg image" />
           </div>
         </div>
 

@@ -7,7 +7,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import { Footer } from './Components/Footer';
-import SingleProject from './pages/SingleProject';
+
 
 function App() {
   return (
